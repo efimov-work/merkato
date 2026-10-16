@@ -1,0 +1,7 @@
+:HL["/merkato/_next/static/chunks/0v6979vy7uae6.css","style"]
+:HL["/merkato/_next/static/media/39c55468420adfa6-s.p.1669nxjwa2fmv.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/44af270ac9d55e91-s.p.2a_rqjkuo6grw.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/68019c21ced96fa9-s.p.0mhosx07nwlp0.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/81cef6a21128489e-s.p.2csanl8cs02r-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/assets/hero.webp","image",{"imageSrcSet":"/merkato/assets/hero-1200.webp 1200w, /merkato/assets/hero.webp 2400w","imageSizes":"max(100vw, 240vh)","fetchPriority":"high"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4224,"slots":null}}},"staleTime":300,"buildId":"I0vasst9cyuO1AKm0sfR-"}
