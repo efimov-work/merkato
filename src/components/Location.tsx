@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { COMPLEX, DISTANCES } from '@/lib/content';
 import { FD, H2, KICKER, PAD, RULE, WRAP } from '@/lib/styles';
 import Photo from './Photo';
@@ -7,7 +8,7 @@ export default function Location() {
     <section id="location" style={{ padding: PAD }}>
       <div style={{ ...WRAP, display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,480px),1fr))', gap: 'clamp(40px,6vw,96px)', alignItems: 'center' }}>
         <Photo
-          src="/assets/hero-1200.webp"
+          src={asset('/assets/hero-1200.webp')}
           alt="ЖК Mercato в центре Сочи, напротив парка «Дендрарий»"
           parallax={0.12}
           style={{ aspectRatio: '4/5' }}

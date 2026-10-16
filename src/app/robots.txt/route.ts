@@ -1,8 +1,8 @@
-import { CLEAN_PARAMS, siteUrl } from '@/lib/seo';
+import { CLEAN_PARAMS, NOINDEX, siteUrl } from '@/lib/seo';
 
 export const dynamic = 'force-static';
 
-const RULES = ['Allow: /', 'Disallow: /api/'];
+const RULES = NOINDEX ? ['Disallow: /'] : ['Allow: /', 'Disallow: /api/'];
 
 export function GET() {
   const url = siteUrl();

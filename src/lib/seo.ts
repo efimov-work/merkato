@@ -1,3 +1,4 @@
+import { asset, BASE_PATH } from './asset';
 import { AMENITIES, COMPLEX, CONTACTS, FEATURES, GALLERY, INFRA, OBJECT_PHOTOS, PLANS } from './content';
 
 export const DEFAULT_SITE_URL = 'http://localhost:3000';
@@ -6,6 +7,8 @@ export const SITE_NAME = 'Mercato';
 
 export const YANDEX_VERIFICATION = process.env.YANDEX_VERIFICATION || undefined;
 export const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION || undefined;
+
+export const NOINDEX = process.env.SITE_NOINDEX === '1';
 
 export const TITLE = 'ЖК Mercato в Сочи: квартиры у моря с доходом от аренды';
 export const DESCRIPTION =
@@ -38,7 +41,7 @@ export const CLEAN_PARAMS = [
   'etext'
 ];
 
-export function siteUrl(): string {
+export function siteOrigin(): string {
   const raw = (process.env.NEXT_PUBLIC_SITE_URL || '').trim();
   if (!raw) return DEFAULT_SITE_URL;
   try {
@@ -48,13 +51,17 @@ export function siteUrl(): string {
   }
 }
 
+export function siteUrl(): string {
+  return `${siteOrigin()}${BASE_PATH}`;
+}
+
 export const HERO_ALT = 'Три корпуса ЖК Mercato в Сочи на фоне моря и гор';
 
 export function pageImages(): { url: string; caption: string }[] {
-  const url = siteUrl();
+  const url = siteOrigin();
   return [
-    { img: '/assets/hero.webp', alt: HERO_ALT },
-    { img: '/assets/market-bypass.webp', alt: 'Обход Адлера, визуализация новой автодороги' },
+    { img: asset('/assets/hero.webp'), alt: HERO_ALT },
+    { img: asset('/assets/market-bypass.webp'), alt: 'Обход Адлера, визуализация новой автодороги' },
     ...Object.values(OBJECT_PHOTOS),
     ...INFRA,
     ...GALLERY,

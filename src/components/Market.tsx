@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { MARKET } from '@/lib/content';
 import { FD, H2, KICKER, PAD, RULE, WRAP } from '@/lib/styles';
 import Photo from './Photo';
@@ -15,7 +16,7 @@ export default function Market() {
           </h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,480px),1fr))', gap: 'clamp(32px,4vw,64px)' }}>
-          <Photo src="/assets/market-bypass.webp" alt="Обход Адлера, визуализация новой автодороги" parallax={0.12} style={{ aspectRatio: '4/3' }}>
+          <Photo src={asset('/assets/market-bypass.webp')} alt="Обход Адлера, визуализация новой автодороги" parallax={0.12} style={{ aspectRatio: '4/3' }}>
             <span style={{ position: 'absolute', left: 16, bottom: 16, padding: '8px 14px', background: 'rgba(243,240,234,.92)', fontSize: 13, borderRadius: 999 }}>Обход Адлера, визуализация</span>
           </Photo>
           <div style={{ display: 'flex', flexDirection: 'column' }}>

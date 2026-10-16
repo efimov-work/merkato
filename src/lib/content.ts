@@ -1,3 +1,5 @@
+import { asset } from './asset';
+
 export const CONTACTS = {
   phone: '+7 862 296-91-29',
   phoneHref: 'tel:+78622969129'
@@ -73,16 +75,16 @@ export const SPECS = [
 ];
 
 export const OBJECT_PHOTOS = {
-  main: { img: '/assets/object-towers.webp', alt: 'Три корпуса ЖК Mercato в Сочи, бассейн и спортивные площадки на территории' },
-  facade: { img: '/assets/object-facade.webp', alt: 'Фасад ЖК Mercato с панорамным остеклением' },
-  sea: { img: '/assets/object-sea.webp', alt: 'Вид на Чёрное море от корпусов ЖК Mercato' }
+  main: { img: asset('/assets/object-towers.webp'), alt: 'Три корпуса ЖК Mercato в Сочи, бассейн и спортивные площадки на территории' },
+  facade: { img: asset('/assets/object-facade.webp'), alt: 'Фасад ЖК Mercato с панорамным остеклением' },
+  sea: { img: asset('/assets/object-sea.webp'), alt: 'Вид на Чёрное море от корпусов ЖК Mercato' }
 };
 
 export const INFRA = [
-  { img: '/assets/infra-pool.webp', alt: 'Инфинити-бассейн с подогревом и шезлонгами в ЖК Mercato', title: 'Инфинити-бассейн с подогревом', note: 'вид на море', wide: true },
-  { img: '/assets/infra-lounge.webp', alt: 'Лаунж-зона у бассейна в ЖК Mercato', title: 'Лаунж-зона у бассейна', note: '', wide: false },
-  { img: '/assets/infra-workout.webp', alt: 'Воркаут-зона и спортивная площадка у корпусов ЖК Mercato', title: 'Воркаут и спортплощадка', note: '', wide: false },
-  { img: '/assets/infra-kids.webp', alt: 'Детская площадка и зона отдыха на территории ЖК Mercato', title: 'Детские площадки', note: '', wide: false }
+  { img: asset('/assets/infra-pool.webp'), alt: 'Инфинити-бассейн с подогревом и шезлонгами в ЖК Mercato', title: 'Инфинити-бассейн с подогревом', note: 'вид на море', wide: true },
+  { img: asset('/assets/infra-lounge.webp'), alt: 'Лаунж-зона у бассейна в ЖК Mercato', title: 'Лаунж-зона у бассейна', note: '', wide: false },
+  { img: asset('/assets/infra-workout.webp'), alt: 'Воркаут-зона и спортивная площадка у корпусов ЖК Mercato', title: 'Воркаут и спортплощадка', note: '', wide: false },
+  { img: asset('/assets/infra-kids.webp'), alt: 'Детская площадка и зона отдыха на территории ЖК Mercato', title: 'Детские площадки', note: '', wide: false }
 ];
 
 export const AMENITIES = ['Тренажёрный зал', 'Зона барбекю', 'Кафе и рестораны', 'Магазины', 'Консьерж-сервис'];
@@ -90,18 +92,18 @@ export const AMENITIES = ['Тренажёрный зал', 'Зона барбе�
 const WIDE = { ratio: '16/10', basis: 'min(78vw,760px)' };
 
 export const GALLERY = [
-  { img: '/assets/gallery-1.webp', caption: 'Корпус и бассейн', alt: 'Корпуса ЖК Mercato в окружении зелени, вид со стороны бассейна', ...WIDE },
-  { img: '/assets/gallery-2.webp', caption: 'Фасад и спортплощадка', alt: 'Фасад ЖК Mercato и спортивные площадки, на горизонте море', ratio: '4/5', basis: 'min(60vw,480px)' },
-  { img: '/assets/gallery-3.webp', caption: 'Бассейн', alt: 'Открытый бассейн на территории ЖК Mercato', ...WIDE },
-  { img: '/assets/gallery-4.webp', caption: 'Аэросъёмка комплекса', alt: 'ЖК Mercato с высоты: три корпуса, спортивные площадки и горы', ...WIDE },
-  { img: '/assets/gallery-5.webp', caption: 'Вид с моря', alt: 'ЖК Mercato на фоне Чёрного моря на закате', ...WIDE },
-  { img: '/assets/gallery-6.webp', caption: 'Корпус и территория', alt: 'Корпус ЖК Mercato и благоустроенная территория с видом на море', ...WIDE }
+  { img: asset('/assets/gallery-1.webp'), caption: 'Корпус и бассейн', alt: 'Корпуса ЖК Mercato в окружении зелени, вид со стороны бассейна', ...WIDE },
+  { img: asset('/assets/gallery-2.webp'), caption: 'Фасад и спортплощадка', alt: 'Фасад ЖК Mercato и спортивные площадки, на горизонте море', ratio: '4/5', basis: 'min(60vw,480px)' },
+  { img: asset('/assets/gallery-3.webp'), caption: 'Бассейн', alt: 'Открытый бассейн на территории ЖК Mercato', ...WIDE },
+  { img: asset('/assets/gallery-4.webp'), caption: 'Аэросъёмка комплекса', alt: 'ЖК Mercato с высоты: три корпуса, спортивные площадки и горы', ...WIDE },
+  { img: asset('/assets/gallery-5.webp'), caption: 'Вид с моря', alt: 'ЖК Mercato на фоне Чёрного моря на закате', ...WIDE },
+  { img: asset('/assets/gallery-6.webp'), caption: 'Корпус и территория', alt: 'Корпус ЖК Mercato и благоустроенная территория с видом на море', ...WIDE }
 ];
 
 export const PLANS = [
-  { tab: '1 комната', area: '37,5 м²', img: '/assets/plan-1.webp', alt: 'Планировка квартиры 37,5 м² с одной спальней в ЖК Mercato', rent: 'Посуточная, пара' },
-  { tab: '2 комнаты', area: '50 м²', img: '/assets/plan-2.webp', alt: 'Планировка квартиры 50 м² в ЖК Mercato', rent: 'Посуточная, семья' },
-  { tab: '3 комнаты', area: '65 м²', img: '/assets/plan-3.webp', alt: 'Планировка квартиры 65 м² с двумя спальнями в ЖК Mercato', rent: 'Посуточная или долгосрочная' }
+  { tab: '1 комната', area: '37,5 м²', img: asset('/assets/plan-1.webp'), alt: 'Планировка квартиры 37,5 м² с одной спальней в ЖК Mercato', rent: 'Посуточная, пара' },
+  { tab: '2 комнаты', area: '50 м²', img: asset('/assets/plan-2.webp'), alt: 'Планировка квартиры 50 м² в ЖК Mercato', rent: 'Посуточная, семья' },
+  { tab: '3 комнаты', area: '65 м²', img: asset('/assets/plan-3.webp'), alt: 'Планировка квартиры 65 м² с двумя спальнями в ЖК Mercato', rent: 'Посуточная или долгосрочная' }
 ];
 
 export const STEPS = [

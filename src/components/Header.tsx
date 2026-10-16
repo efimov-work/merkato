@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { asset } from '@/lib/asset';
 import { CONTACTS, NAV } from '@/lib/content';
 import { FD } from '@/lib/styles';
 
@@ -60,7 +61,7 @@ export default function Header() {
       <header className={`hdr${scrolled ? ' hdr--scrolled' : ''}${open ? ' hdr--open' : ''}`}>
         <div style={{ maxWidth: 1760, margin: '0 auto', padding: '0 clamp(20px,4vw,56px)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24 }}>
           <a href="#top" onClick={close} style={{ display: 'flex', alignItems: 'center', gap: 12, color: 'inherit' }}>
-            <img className="hdr__logo" src="/logo.webp" alt="" width={160} height={150} />
+            <img className="hdr__logo" src={asset('/logo.webp')} alt="" width={160} height={150} />
             <span style={{ ...FD, fontSize: 'calc(26px * var(--fs))', letterSpacing: 'var(--fls)' }}>Mercato</span>
           </a>
           <nav className="only-desk" aria-label="Разделы страницы" style={{ gap: 36, fontSize: 14, letterSpacing: '.02em' }}>

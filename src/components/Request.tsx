@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { FD, WRAP } from '@/lib/styles';
 import RequestForm from './RequestForm';
 
@@ -7,7 +8,7 @@ export default function Request() {
   return (
     <section id="request" style={{ position: 'relative', overflow: 'hidden', background: '#0E1A24', color: '#F7F4EE', padding: 'clamp(90px,12vw,170px) clamp(20px,4vw,56px)' }}>
       <div style={{ position: 'absolute', inset: 0, opacity: 0.28 }}>
-        <img data-px="0.2" src="/assets/gallery-5.webp" alt="" loading="lazy" decoding="async" style={{ position: 'absolute', left: 0, top: '-15%', width: '100%', height: '130%', objectFit: 'cover' }} />
+        <img data-px="0.2" src={asset('/assets/gallery-5.webp')} alt="" loading="lazy" decoding="async" style={{ position: 'absolute', left: 0, top: '-15%', width: '100%', height: '130%', objectFit: 'cover' }} />
       </div>
       <div style={{ ...WRAP, position: 'relative', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,440px),1fr))', gap: 'clamp(40px,6vw,96px)', alignItems: 'end' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>

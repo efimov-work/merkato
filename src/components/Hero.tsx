@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { FEATURES, HERO_FACTS } from '@/lib/content';
 import { HERO_ALT } from '@/lib/seo';
 import { delay, FD } from '@/lib/styles';
@@ -26,8 +27,8 @@ export default function Hero() {
         <div className="in-hero" style={{ position: 'absolute', inset: 0 }}>
           <img
             data-px="0.25"
-            src="/assets/hero.webp"
-            srcSet="/assets/hero-1200.webp 1200w, /assets/hero.webp 2400w"
+            src={asset('/assets/hero.webp')}
+            srcSet={`${asset('/assets/hero-1200.webp')} 1200w, ${asset('/assets/hero.webp')} 2400w`}
             sizes="max(100vw, 240vh)"
             alt={HERO_ALT}
             width={2400}
