@@ -1,6 +1,6 @@
 import { asset } from '@/lib/asset';
 import { FEATURES, HERO_FACTS } from '@/lib/content';
-import { HERO_ALT } from '@/lib/seo';
+import { HERO_ALT, HERO_SIDE_ALT } from '@/lib/seo';
 import { delay, FD } from '@/lib/styles';
 
 const line = { display: 'block', overflow: 'hidden', paddingBottom: '.06em' } as const;
@@ -27,19 +27,28 @@ export default function Hero() {
         <div className="in-hero" style={{ position: 'absolute', inset: 0 }}>
           <img
             data-px="0.25"
-            src={asset('/assets/hero.webp')}
-            srcSet={`${asset('/assets/hero-1200.webp')} 1200w, ${asset('/assets/hero.webp')} 2400w`}
-            sizes="max(100vw, 240vh)"
+            src={asset('/assets/infra-lounge.webp')}
             alt={HERO_ALT}
-            width={2400}
-            height={1120}
+            width={1000}
+            height={1000}
             fetchPriority="high"
             decoding="async"
-            style={{ position: 'absolute', inset: '-6% 0 0 0', width: '100%', height: '112%', objectFit: 'cover' }}
+            style={{ position: 'absolute', inset: '-6% 0 0 0', width: '100%', height: '112%', objectFit: 'cover', objectPosition: '50% 62%' }}
           />
+          <div className="hero-side">
+            <img
+              src={asset('/assets/hero-1200.webp')}
+              srcSet={`${asset('/assets/hero-1200.webp')} 1200w, ${asset('/assets/hero.webp')} 2400w`}
+              sizes="80vh"
+              alt={HERO_SIDE_ALT}
+              width={2400}
+              height={1120}
+              decoding="async"
+            />
+          </div>
         </div>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(14,26,36,.5) 0%,rgba(14,26,36,.2) 30%,rgba(14,26,36,.45) 60%,rgba(14,26,36,.9) 100%)' }}></div>
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg,rgba(14,26,36,.7) 0%,rgba(14,26,36,.35) 45%,rgba(14,26,36,0) 75%)' }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(14,26,36,.45) 0%,rgba(14,26,36,0) 28%,rgba(14,26,36,.15) 55%,rgba(14,26,36,.88) 100%)' }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg,rgba(14,26,36,.55) 0%,rgba(14,26,36,.15) 40%,rgba(14,26,36,0) 60%)' }}></div>
         <div
           style={{
             position: 'relative',
@@ -60,18 +69,21 @@ export default function Hero() {
               <span style={{ opacity: 0.5 }}>/</span>
               <span>Дом сдан</span>
             </div>
-            <h1 style={{ ...FD, margin: 0, letterSpacing: 'var(--fls)', fontSize: 'calc(clamp(52px,8.4vw,136px) * var(--fs))', lineHeight: 1.04, maxWidth: '16ch', textWrap: 'balance' }}>
+            <h1 style={{ ...FD, margin: 0, letterSpacing: 'var(--fls)', fontSize: 'calc(clamp(40px,5.6vw,92px) * var(--fs))', lineHeight: 1.06, maxWidth: '19ch', textWrap: 'balance' }}>
               <span style={line}>
                 <span className="in-line" style={{ ...delay(200), display: 'block' }}>
-                  Квартиры у моря
+                  Квартиры для отдыха или жизни
                 </span>
               </span>{' '}
               <span style={line}>
                 <span className="in-line" style={{ ...delay(340), display: 'block' }}>
-                  как доходный актив
+                  в доме элит-класса с infinity-бассейном
                 </span>
               </span>
             </h1>
+            <p className="in-fade" style={{ ...delay(480), margin: 0, maxWidth: 560, fontSize: 'clamp(16px,1.3vw,19px)', lineHeight: 1.5, opacity: 0.9 }}>
+              Инвестор приходит в готовый дом: ключи сразу, квартиру можно сдавать с первого месяца.
+            </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: 24, alignItems: 'end', borderTop: '1px solid rgba(247,244,238,.25)', paddingTop: 24 }}>
             {HERO_FACTS.map((f, i) => (

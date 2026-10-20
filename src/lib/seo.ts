@@ -12,7 +12,7 @@ export const NOINDEX = process.env.SITE_NOINDEX === '1';
 
 export const TITLE = 'ЖК Mercato в Сочи: квартиры у моря с доходом от аренды';
 export const DESCRIPTION =
-  'Готовые квартиры в сданном ЖК премиум-класса Mercato в центре Сочи, напротив Дендрария. Бассейн, паркинг, управляющая компания. Расчёт доходности за 1 день.';
+  'Квартиры для отдыха или жизни в сданном доме элит-класса Mercato в центре Сочи, напротив Дендрария. Infinity-бассейн, паркинг, управляющая компания. Расчёт доходности за 1 день.';
 
 export const KEYWORDS = [
   'ЖК Mercato',
@@ -55,12 +55,13 @@ export function siteUrl(): string {
   return `${siteOrigin()}${BASE_PATH}`;
 }
 
-export const HERO_ALT = 'Три корпуса ЖК Mercato в Сочи на фоне моря и гор';
+export const HERO_ALT = 'Пальма и infinity-бассейн с видом на море в ЖК Mercato в Сочи';
+export const HERO_SIDE_ALT = 'Три корпуса ЖК Mercato в Сочи на фоне моря и гор';
 
 export function pageImages(): { url: string; caption: string }[] {
   const url = siteOrigin();
   return [
-    { img: asset('/assets/hero.webp'), alt: HERO_ALT },
+    { img: asset('/assets/hero.webp'), alt: HERO_SIDE_ALT },
     { img: asset('/assets/market-bypass.webp'), alt: 'Обход Адлера, визуализация новой автодороги' },
     ...Object.values(OBJECT_PHOTOS),
     ...INFRA,
