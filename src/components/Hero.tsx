@@ -3,7 +3,7 @@ import { FEATURES, HERO_FACTS } from '@/lib/content';
 import { HERO_ALT, HERO_SIDE_ALT } from '@/lib/seo';
 import { delay, FD } from '@/lib/styles';
 
-const line = { display: 'block', overflow: 'hidden', paddingBottom: '.06em' } as const;
+const line = { display: 'block', overflow: 'hidden', paddingBottom: '.2em', marginBottom: '-.14em' } as const;
 
 function Features({ hidden }: { hidden?: boolean }) {
   return (
