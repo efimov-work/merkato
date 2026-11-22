@@ -1,0 +1,8 @@
+:HL["/merkato/_next/static/media/6ce0d0fd45f1bd74-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/7a820720491a53d2-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/9dd75fadc5b3df29-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/b8c37bb59076c047-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/css/7e257232c90f2614.css","style"]
+:HL["/merkato/_next/static/css/53f264b9ddc657b1.css","style"]
+:HL["/merkato/logo.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"guide","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"planirovki","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"FFK9mc15LDu_EIiaCgu3k"}

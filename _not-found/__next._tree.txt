@@ -1,2 +1,6 @@
-:HL["/merkato/_next/static/chunks/39_3bt1ydkeuu.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"2GaLF-RMpXjX-D2odo5ny"}
+:HL["/merkato/_next/static/media/6ce0d0fd45f1bd74-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/7a820720491a53d2-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/9dd75fadc5b3df29-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/media/b8c37bb59076c047-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/merkato/_next/static/css/7e257232c90f2614.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"FFK9mc15LDu_EIiaCgu3k"}
