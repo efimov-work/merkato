@@ -15,7 +15,7 @@ export default function Gallery() {
   };
 
   return (
-    <section style={{ background: '#0E1A24', color: '#F7F4EE', padding: 'clamp(80px,10vw,130px) 0' }}>
+    <section id="gallery" style={{ background: '#0E1A24', color: '#F7F4EE', padding: 'clamp(80px,10vw,130px) 0' }}>
       <div style={{ maxWidth: 1760, margin: '0 auto', padding: '0 clamp(20px,4vw,56px) 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'end', gap: 24, flexWrap: 'wrap' }}>
         <h2 data-r="up" style={{ ...H2, textWrap: undefined }}>
           Галерея

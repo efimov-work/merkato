@@ -1,3 +1,4 @@
+import { buildJsonLd } from '@/lib/seo';
 import Calculator from '@/components/Calculator';
 import ChatWidget from '@/components/ChatWidget';
 import Complex from '@/components/Complex';
@@ -34,6 +35,7 @@ export default function Page() {
       <Footer />
       <Motion />
       <ChatWidget />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd()).replace(/</g, '\\u003c') }} />
     </>
   );
 }

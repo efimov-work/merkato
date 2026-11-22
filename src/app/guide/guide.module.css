@@ -1,0 +1,226 @@
+.header {
+  background: #0E1A24;
+  color: #F7F4EE;
+}
+
+.headerInner {
+  max-width: 1500px;
+  min-height: 78px;
+  margin-inline: auto;
+  padding: 14px clamp(20px, 4vw, 56px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font: 400 1.4rem var(--fd);
+}
+
+.header nav {
+  display: flex;
+  gap: 8px 24px;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  padding: 4px 0;
+}
+
+.header nav a[aria-current] {
+  color: #E2C89D;
+  border-bottom: 1px solid currentColor;
+}
+
+.headerPhone { white-space: nowrap; }
+
+.shell {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px clamp(20px, 4vw, 56px) clamp(56px, 9vw, 132px);
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: clamp(36px, 6vw, 88px);
+  font-size: .94rem;
+  color: #55575D;
+}
+
+.breadcrumbs a,
+.articleText a,
+.figure a,
+.related a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.intro { max-width: 920px; }
+
+.intro h1, .shell h2, .shell h3 {
+  margin: 0;
+  font-family: var(--fd);
+  font-weight: 400;
+  letter-spacing: var(--fls);
+}
+
+.intro h1 {
+  font-size: clamp(2.15rem, 4.7vw, 4.25rem);
+  line-height: 1.19;
+  text-wrap: balance;
+}
+
+.intro p {
+  max-width: 65ch;
+  margin: 18px 0 0;
+  color: #55575D;
+  font-size: clamp(1.0625rem, 1.55vw, 1.235rem);
+  line-height: 1.55;
+}
+
+.intro .topic {
+  margin: 0 0 14px;
+  color: var(--acd);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.contents a {
+  padding: 9px 15px;
+  border-radius: 30px;
+  border: 1px solid #AA9680;
+  color: #282520;
+}
+
+.contents a:hover { background: #E8E0D3; }
+
+.group { margin-top: clamp(44px, 7vw, 86px); }
+.shell h2 { font-size: clamp(1.5rem, 3vw, 2.3rem); line-height: 1.24; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 285px), 1fr));
+  gap: 14px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.card {
+  display: block;
+  height: 100%;
+  border: 1px solid #DDD4C8;
+  border-radius: 14px;
+  background: #FAF8F4;
+  overflow: hidden;
+}
+
+.textCard {
+  display: flex;
+  align-items: center;
+  min-height: 148px;
+}
+
+.card:hover {
+  border-color: var(--acd);
+  color: #282520;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.card .plan, .figure .plan {
+  object-fit: contain;
+  background: #E7EEF1;
+  padding: 6px;
+}
+
+.card div { padding: 22px; }
+.card h3 { font-size: clamp(1.15rem, 1.7vw, 1.43rem); line-height: 1.31; }
+.card p { color: #55575D; margin: 12px 0 0; line-height: 1.47; font-size: 1rem; }
+
+.figure {
+  max-width: 1050px;
+  margin: 28px auto 0;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 530px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.figure figcaption {
+  margin-top: 8px;
+  font-size: .95rem;
+  color: #55575D;
+}
+
+.enlarge {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.articleText {
+  max-width: 820px;
+  margin: clamp(40px, 6vw, 80px) auto 0;
+  color: #333840;
+  font-size: clamp(1.0625rem, 1.52vw, 1.2rem);
+  line-height: 1.65;
+}
+
+.articleText h2 { color: #15171B; font-size: clamp(1.38rem, 2.6vw, 2.02rem); }
+.articleText section + section { margin-top: clamp(32px, 4vw, 54px); }
+.articleText p { margin: 13px 0 0; }
+.articleText ul { margin: 12px 0 0; padding-left: 1.3em; }
+.articleText li + li { margin-top: 6px; }
+.sources { font-size: .95rem; }
+
+.callout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 25px;
+  margin-top: clamp(44px, 7vw, 78px);
+  padding: clamp(22px, 4vw, 48px);
+  border-radius: 18px;
+  background: #0E1A24;
+  color: #F7F4EE;
+}
+
+.callout p { margin: 10px 0 0; }
+.related { margin-top: 36px; }
+.related ul { display: flex; gap: 12px 30px; flex-wrap: wrap; margin: 15px 0 0; padding: 0; list-style: none; }
+
+.header a:focus-visible, .shell a:focus-visible {
+  outline: 2px solid #946B30;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .headerInner nav { width: 100%; order: 1; }
+}

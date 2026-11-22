@@ -8,7 +8,7 @@ export const SITE_NAME = 'Mercato';
 export const YANDEX_VERIFICATION = process.env.YANDEX_VERIFICATION || undefined;
 export const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION || undefined;
 
-export const NOINDEX = process.env.SITE_NOINDEX === '1';
+export const NOINDEX = process.env.SITE_NOINDEX === '1' || siteOrigin() === DEFAULT_SITE_URL;
 
 export const TITLE = 'ЖК Mercato в Сочи: квартиры у моря с доходом от аренды';
 export const DESCRIPTION =
@@ -45,7 +45,8 @@ export function siteOrigin(): string {
   const raw = (process.env.NEXT_PUBLIC_SITE_URL || '').trim();
   if (!raw) return DEFAULT_SITE_URL;
   try {
-    return new URL(raw).origin;
+    const url = new URL(raw);
+    return ['http:', 'https:'].includes(url.protocol) ? url.origin : DEFAULT_SITE_URL;
   } catch {
     return DEFAULT_SITE_URL;
   }

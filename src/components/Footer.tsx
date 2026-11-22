@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { asset } from '@/lib/asset';
 import { COMPLEX, CONTACTS } from '@/lib/content';
 import { FD } from '@/lib/styles';
@@ -12,7 +13,10 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 32, fontSize: 15 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, color: '#F7F4EE' }}>
             <img src={asset('/logo.webp')} alt="" width={160} height={150} loading="lazy" style={{ width: 40, height: 'auto' }} />
-            <span style={{ ...FD, fontSize: 'calc(28px * var(--fs))' }}>Mercato</span>
+            <div style={col}>
+              <span style={{ ...FD, fontSize: 'calc(28px * var(--fs))' }}>Mercato</span>
+              <Link href="/guide">Гид покупателя</Link>
+            </div>
           </div>
           <div style={col}>
             <span style={label}>Отдел продаж</span>

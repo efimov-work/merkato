@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { asset } from '@/lib/asset';
 import { CONTACTS, NAV } from '@/lib/content';
@@ -64,12 +65,13 @@ export default function Header() {
             <img className="hdr__logo" src={asset('/logo.webp')} alt="" width={160} height={150} />
             <span style={{ ...FD, fontSize: 'calc(26px * var(--fs))', letterSpacing: 'var(--fls)' }}>Mercato</span>
           </a>
-          <nav className="only-desk" aria-label="Разделы страницы" style={{ gap: 36, fontSize: 14, letterSpacing: '.02em' }}>
+          <nav className="only-desk" aria-label="Разделы страницы" style={{ gap: 'clamp(12px,2vw,36px)', fontSize: 14, letterSpacing: '.02em' }}>
             {NAV.map((n) => (
               <a key={n.href} href={n.href}>
                 {n.label}
               </a>
             ))}
+            <Link href="/guide" style={{ fontWeight: 600, whiteSpace: 'nowrap' }}>Гид покупателя</Link>
           </nav>
           <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
             <a className="only-desk" href={CONTACTS.phoneHref} style={{ fontSize: 14, letterSpacing: '.02em', whiteSpace: 'nowrap' }}>
@@ -107,6 +109,7 @@ export default function Header() {
                 {n.label}
               </a>
             ))}
+            <Link href="/guide" onClick={close}>Гид покупателя</Link>
           </nav>
           <a href={CONTACTS.phoneHref} style={{ fontSize: 18 }}>
             {CONTACTS.phone}

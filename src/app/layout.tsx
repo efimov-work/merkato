@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Jost, Prata } from 'next/font/google';
 import Analytics from '@/components/Analytics';
-import { buildJsonLd, DESCRIPTION, GOOGLE_VERIFICATION, KEYWORDS, NOINDEX, SITE_NAME, siteOrigin, siteUrl, TITLE, YANDEX_VERIFICATION } from '@/lib/seo';
+import { DESCRIPTION, GOOGLE_VERIFICATION, KEYWORDS, NOINDEX, SITE_NAME, siteOrigin, siteUrl, TITLE, YANDEX_VERIFICATION } from '@/lib/seo';
 import './globals.css';
 
 const prata = Prata({ subsets: ['latin', 'cyrillic'], weight: '400', variable: '--font-prata', display: 'swap' });
@@ -61,7 +61,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ru" className={`${prata.variable} ${jost.variable}`}>
       <body>
         {children}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd()) }} />
         <Analytics />
       </body>
     </html>
