@@ -5,4 +5,4 @@
 :HL["/merkato/_next/static/css/7e257232c90f2614.css","style"]
 :HL["/merkato/_next/static/css/53f264b9ddc657b1.css","style"]
 :HL["/merkato/logo.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"guide","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"dvor","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"oAYDH_wctzCH-dJaOkHBx"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"guide","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"dvor","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"C2h0BfcmKVzQUGStB-Or8"}

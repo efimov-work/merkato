@@ -5,4 +5,4 @@
 :HL["/merkato/_next/static/css/7e257232c90f2614.css","style"]
 :HL["/merkato/assets/infra-lounge.webp","image",{"fetchPriority":"high"}]
 :HL["/merkato/assets/hero-1200.webp","image",{"imageSrcSet":"/merkato/assets/hero-1200.webp 1200w, /merkato/assets/hero.webp 2400w","imageSizes":"80vh"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"oAYDH_wctzCH-dJaOkHBx"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"C2h0BfcmKVzQUGStB-Or8"}
